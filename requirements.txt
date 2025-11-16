@@ -21,6 +21,7 @@ numpy>=1.26.4,<2.3.0  # Compatible with both numpy 1.26.4 and 2.x series
 # Audio processing (safe)
 soundfile>=0.12.0
 sounddevice>=0.4.0
+librosa
 
 # Text processing (safe)
 jieba
@@ -92,3 +93,4 @@ torchfcpe>=0.0.4         # Fast Context-based Pitch Estimation for RVC (fcpe met
 # - F5-TTS: engines/f5_tts/ (numpy 2.x compatible fork)
 # - Higgs Audio: engines/higgs_audio/ (transformers 4.46+ compatible)
 # - IndexTTS-2: engines/index_tts/ (emotion disentanglement TTS)
+
