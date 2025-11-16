@@ -21,6 +21,20 @@ numpy>=1.26.4,<2.3.0  # Compatible with both numpy 1.26.4 and 2.x series
 # Audio processing (safe)
 soundfile>=0.12.0
 sounddevice>=0.4.0
+
+
+# librosa
+lazy_loader>=0.1
+msgpack>=1.0
+pooch>=1.1
+soxr>=0.3.2
+typing_extensions
+decorator>=4.3.0
+joblib>=1.0
+scikit-learn>=1.1.0
+audioread>=2.1.9
+threadpoolctl>=3.1.0
+s3tokenizer>=0.1.7
 librosa
 
 # Text processing (safe)
@@ -50,24 +64,6 @@ vocos                # F5-TTS vocoder
 # VoiceFixer is bundled in utils/voicefixer_bundled/
 # Uses librosa (already required) for STFT/ISTFT instead of torchlibrosa - reduces dependencies
 
-# IndexTTS-2 engine dependencies (safe)
-cn2an>=0.5.22         # Chinese number to Arabic number conversion
-g2p-en>=2.1.0         # English grapheme-to-phoneme conversion
-keras>=2.9.0          # Deep learning framework
-modelscope>=1.27.0    # Chinese model hub for IndexTTS-2
-munch>=4.0.0          # Dictionary access with dot notation
-json5>=0.12.0         # JSON5 parsing for IndexTTS-2 config files
-ninja>=1.11.0         # Build tool for CUDA kernel compilation (BigVGAN optimization)
-sentencepiece>=0.2.1  # Text tokenization
-textstat>=0.7.10      # Text statistics and readability
-
-# RVC voice conversion (safe)
-monotonic-alignment-search
-faiss-cpu>=1.7.4
-praat-parselmouth>=0.4.6  # Praat-based f0 extraction for RVC (pm method)
-pyworld>=0.3.5           # World vocoder for RVC harvest/dio methods
-torchfcpe>=0.0.4         # Fast Context-based Pitch Estimation for RVC (fcpe method)
-
 # Optional performance enhancements
 # sageattention  # Optional: GPU-optimized mixed-precision attention for VibeVoice (requires CUDA SM80+)
 
@@ -93,4 +89,5 @@ torchfcpe>=0.0.4         # Fast Context-based Pitch Estimation for RVC (fcpe met
 # - F5-TTS: engines/f5_tts/ (numpy 2.x compatible fork)
 # - Higgs Audio: engines/higgs_audio/ (transformers 4.46+ compatible)
 # - IndexTTS-2: engines/index_tts/ (emotion disentanglement TTS)
+
 
